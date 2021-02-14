@@ -30,11 +30,14 @@
         {
             this.components = new System.ComponentModel.Container();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.Comienza = new System.Windows.Forms.Button();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // notifyIcon1
@@ -42,71 +45,109 @@
             this.notifyIcon1.Text = "notifyIcon1";
             this.notifyIcon1.Visible = true;
             // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(59, 73);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(65, 17);
-            this.checkBox1.TabIndex = 0;
-            this.checkBox1.Text = "Diablo 1\r\n";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // checkBox2
-            // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(59, 114);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(65, 17);
-            this.checkBox2.TabIndex = 1;
-            this.checkBox2.Text = "Diablo 2\r\n";
-            this.checkBox2.UseVisualStyleBackColor = true;
-            // 
-            // checkBox3
-            // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(59, 156);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(65, 17);
-            this.checkBox3.TabIndex = 2;
-            this.checkBox3.Text = "Diablo 3";
-            this.checkBox3.UseVisualStyleBackColor = true;
-            this.checkBox3.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
-            // 
-            // checkBox4
-            // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(59, 196);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(65, 17);
-            this.checkBox4.TabIndex = 3;
-            this.checkBox4.Text = "Diablo 4";
-            this.checkBox4.UseVisualStyleBackColor = true;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(56, 31);
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label1.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(69, 49);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(84, 13);
+            this.label1.Size = new System.Drawing.Size(155, 27);
             this.label1.TabIndex = 4;
             this.label1.Text = "It\'s your choice !";
             this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // Comienza
+            // 
+            this.Comienza.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Comienza.Location = new System.Drawing.Point(88, 298);
+            this.Comienza.Name = "Comienza";
+            this.Comienza.Size = new System.Drawing.Size(94, 36);
+            this.Comienza.TabIndex = 5;
+            this.Comienza.Text = "Comienza";
+            this.Comienza.UseVisualStyleBackColor = true;
+            this.Comienza.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.CheckAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.radioButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.radioButton1.Font = new System.Drawing.Font("MV Boli", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton1.Location = new System.Drawing.Point(25, 120);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(90, 40);
+            this.radioButton1.TabIndex = 6;
+            this.radioButton1.Text = "Diablo 1";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.CheckAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.radioButton2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.radioButton2.Font = new System.Drawing.Font("MV Boli", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton2.Location = new System.Drawing.Point(149, 120);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(95, 40);
+            this.radioButton2.TabIndex = 7;
+            this.radioButton2.Text = "Diablo 2";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.CheckAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.radioButton3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.radioButton3.Font = new System.Drawing.Font("MV Boli", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton3.Location = new System.Drawing.Point(25, 212);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(95, 40);
+            this.radioButton3.TabIndex = 8;
+            this.radioButton3.Text = "Diablo 3";
+            this.radioButton3.UseVisualStyleBackColor = true;
+            this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
+            // 
+            // radioButton4
+            // 
+            this.radioButton4.AutoSize = true;
+            this.radioButton4.CheckAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.radioButton4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.radioButton4.Font = new System.Drawing.Font("MV Boli", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton4.Location = new System.Drawing.Point(151, 212);
+            this.radioButton4.Name = "radioButton4";
+            this.radioButton4.Size = new System.Drawing.Size(95, 40);
+            this.radioButton4.TabIndex = 9;
+            this.radioButton4.Text = "Diablo 4";
+            this.radioButton4.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(280, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(582, 366);
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
             // 
             // UserControl1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Maroon;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.radioButton4);
+            this.Controls.Add(this.radioButton3);
+            this.Controls.Add(this.radioButton2);
+            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.Comienza);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.checkBox4);
-            this.Controls.Add(this.checkBox3);
-            this.Controls.Add(this.checkBox2);
-            this.Controls.Add(this.checkBox1);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Name = "UserControl1";
-            this.Size = new System.Drawing.Size(183, 262);
+            this.Size = new System.Drawing.Size(876, 390);
             this.Load += new System.EventHandler(this.UserControl1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -115,13 +156,12 @@
         #endregion
 
         private System.Windows.Forms.NotifyIcon notifyIcon1;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox4;
         private System.Windows.Forms.Label label1;
-
-        
-
+        private System.Windows.Forms.Button Comienza;
+        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.RadioButton radioButton4;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
