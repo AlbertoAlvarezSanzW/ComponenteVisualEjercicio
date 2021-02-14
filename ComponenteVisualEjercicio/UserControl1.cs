@@ -22,11 +22,6 @@ namespace ComponenteVisualEjercicio
 
         }
 
-        private void checkBox3_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
@@ -35,6 +30,50 @@ namespace ComponenteVisualEjercicio
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton4_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string decision = "Has seleccionado: ";
+
+            if (radioButton1.Checked){
+                decision += radioButton1.Text + ", buena suerte !";
+            }
+            if (radioButton2.Checked){
+                decision += radioButton2.Text + ", buena suerte !";
+            }
+            if (radioButton3.Checked){
+                decision += radioButton3.Text + ", buena suerte !";
+            }
+            if (radioButton4.Checked){
+                decision += radioButton4.Text + ", buena suerte !";
+            }
+            MessageBox.Show(decision);
         }
     }
 }
