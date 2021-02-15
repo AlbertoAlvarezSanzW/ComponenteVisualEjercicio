@@ -62,20 +62,20 @@ namespace ComponenteVisualEjercicio
             string decision = "Has seleccionado: ";
 
             if (radioButton1.Checked){
-                decision += radioButton1.Text + ", buena suerte !";
-                pictureBox1.Image = Image.FromFile("C:/Users/Alberto/Desktop/foticos/diablo.png");
+                decision += radioButton1.Text + ",¡ buena suerte !";
+                pictureBox1.Image = Properties.Resources.diablo;
             }
             if (radioButton2.Checked){
-                decision += radioButton2.Text + ", buena suerte !";
-                pictureBox1.Image = Image.FromFile("C:/Users/Alberto/Desktop/foticos/diablo2.png");
+                decision += radioButton2.Text + ",¡ buena suerte !";
+                pictureBox1.Image = Properties.Resources.diablo2;
             }
             if (radioButton3.Checked){
-                decision += radioButton3.Text + ", buena suerte !";
-                pictureBox1.Image = Image.FromFile("C:/Users/Alberto/Desktop/foticos/diablo3.png");
+                decision += radioButton3.Text + ",¡ buena suerte !";
+                pictureBox1.Image = Properties.Resources.diablo3;
             }
             if (radioButton4.Checked){
-                decision += radioButton4.Text + ", buena suerte !";
-                pictureBox1.Image = Image.FromFile("C:/Users/Alberto/Desktop/foticos/diablo4.png");
+                decision += radioButton4.Text + ",¡ buena suerte !";
+                pictureBox1.Image = Properties.Resources.diablo4;
             }
             MessageBox.Show(decision);
         }
